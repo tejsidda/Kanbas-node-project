@@ -10,7 +10,6 @@ import CourseRoutes from "./Kanbas/Courses/routes.js";
 import EnrollmentRoutes from "./Kanbas/Enrollments/routes.js";
 import AssignmentRoutes from "./Kanbas/Assignments/routes.js";
 
-import session from "express-session";
 import bodyParser from "body-parser";
 
 
