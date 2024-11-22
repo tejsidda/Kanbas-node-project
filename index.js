@@ -14,7 +14,7 @@ const app = express();
 app.use(
   cors({
     credentials: true,
-    origin: process.env.NETLIFY_URL || "http://localhost:3000",
+    origin: 'https://a5--kanbas-web-dev-project.netlify.app/',
   })
 );
 const sessionOptions = {
@@ -27,7 +27,7 @@ if (process.env.NODE_ENV !== "development") {
   sessionOptions.cookie = {
     sameSite: "none",
     secure: true,
-    domain: process.env.NODE_SERVER_DOMAIN,
+    domain: "kanbas-node-project-qqb4.onrender.com",
   };
 }
 app.use(session(sessionOptions));
