@@ -1,0 +1,88 @@
+export default [
+  {
+    _id: "A101",
+    title: "Propulsion Assignment",
+    course: "RS101",
+    description:
+      "Examine various propulsion technologies and assess their effectiveness.",
+    points: 100,
+    dueDate: "2024-10-20",
+    availableDate: "2024-09-01",
+  },
+  {
+    _id: "A102",
+    title: "Combustion Analysis",
+    course: "RS101",
+    description:
+      "Analyze combustion mechanisms utilized in propulsion systems.",
+    points: 100,
+    dueDate: "2024-10-27",
+    availableDate: "2024-09-08",
+  },
+  {
+    _id: "A103",
+    title: "Nozzle Design Project",
+    course: "RS101",
+    description: "Create a nozzle design to optimize propulsion efficiency.",
+    points: 120,
+    dueDate: "2024-11-05",
+    availableDate: "2024-09-15",
+  },
+  {
+    _id: "A201",
+    title: "Aerodynamics Quiz",
+    course: "RS102",
+    description: "Assess your understanding of aerodynamic concepts.",
+    points: 100,
+    dueDate: "2024-10-22",
+    availableDate: "2024-09-22",
+  },
+  {
+    _id: "A202",
+    title: "Flow Analysis",
+    course: "RS102",
+    description:
+      "Examine flow dynamics and forecast performance in aerodynamic environments.",
+    points: 100,
+    dueDate: "2024-10-30",
+    availableDate: "2024-09-29",
+  },
+  {
+    _id: "A203",
+    title: "Heating Analysis",
+    course: "RS102",
+    description: "Study the thermal impact on aircraft surfaces during flight.",
+    points: 100,
+    dueDate: "2024-11-08",
+    availableDate: "2024-10-06",
+  },
+  {
+    _id: "A301",
+    title: "Structural Design Task",
+    course: "RS103",
+    description: "Propose a structural design for a space vehicle.",
+    points: 110,
+    dueDate: "2024-10-25",
+    availableDate: "2024-10-13",
+  },
+  {
+    _id: "A302",
+    title: "Orbital Calculations",
+    course: "RS103",
+    description:
+      "Perform orbital calculations and determine their effects on space missions.",
+    points: 100,
+    dueDate: "2024-11-01",
+    availableDate: "2024-10-20",
+  },
+  {
+    _id: "A303",
+    title: "Systems Engineering Exam",
+    course: "RS103",
+    description:
+      "Comprehensive examination covering systems engineering concepts.",
+    points: 100,
+    dueDate: "2024-11-10",
+    availableDate: "2024-10-27",
+  },
+];
