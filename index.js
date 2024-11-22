@@ -39,7 +39,7 @@ const app = express();
 // Configure allowed origins (frontend and backend)
 const allowedOrigins = [
   "http://localhost:3000", // Local React development
-  process.env.NETLIFY_URL || "https://a5--kanbas-web-dev-project.netlify.app/", // Netlify deployment
+  process.env.NETLIFY_URL || "https://a5--kanbas-web-dev-project.netlify.app", // Netlify deployment
 ];
 
 // Configure CORS
