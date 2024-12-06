@@ -6,6 +6,7 @@ import UserRoutes from "./Kanbas/Users/routes.js";
 import session from "express-session";
 import ModuleRoutes from "./Kanbas/Modules/routes.js";
 import "dotenv/config";
+import mongoose from "mongoose";
 import CourseRoutes from "./Kanbas/Courses/routes.js";
 import EnrollmentRoutes from "./Kanbas/Enrollments/routes.js";
 import AssignmentRoutes from "./Kanbas/Assignments/routes.js";
@@ -13,33 +14,17 @@ import AssignmentRoutes from "./Kanbas/Assignments/routes.js";
 import bodyParser from "body-parser";
 
 
-// const app = express();
-// app.use(
-//   cors({
-//     credentials: true,
-//     origin: 'https://a5--kanbas-web-dev-project.netlify.app/',
-//   })
-// );
-// const sessionOptions = {
-//   secret: process.env.SESSION_SECRET || "kanbas",
-//   resave: false,
-//   saveUninitialized: false,
-//   proxy: true,
-//   cookie: {
-//     sameSite: 'none',
-//     secure: true,
-//     domain: "kanbas-node-project-qqb4.onrender.com",
-//   }
-// };
-// 
-// app.use(session(sessionOptions));
 
+
+mongoose.connect(process.env.MONGO_CONNECTION_STRING)
+  .then(() => console.log('Connected to MongoDB'))
+  .catch(err => console.error('MongoDB connection error:', err));
 const app = express();
 
 // Configure allowed origins (frontend and backend)
 const allowedOrigins = [
-  "http://localhost:3000", // Local React development
-  process.env.NETLIFY_URL || "https://a5--kanbas-web-dev-project.netlify.app", // Netlify deployment
+  // "http://localhost:3000", // Local React development
+  process.env.NETLIFY_URL || "https://a6--kanbas-web-dev-project.netlify.app/#/Kanbas/Account/Signin", 
 ];
 
 // Configure CORS
@@ -78,7 +63,7 @@ app.use(
         process.env.NODE_ENV === "production"
           ? process.env.NODE_SERVER_DOMAIN ||
             "kanbas-node-project-qqb4.onrender.com" // Backend domain for production
-          : undefined, // No domain for local development
+          : undefined, 
     },
     proxy: process.env.NODE_ENV === "production", // Trust reverse proxies in production
   })
