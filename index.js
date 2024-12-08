@@ -23,8 +23,8 @@ const app = express();
 
 // Configure allowed origins (frontend and backend)
 const allowedOrigins = [
-  // "http://localhost:3000", // Local React development
-  process.env.NETLIFY_URL || "https://a6--kanbas-web-dev-project.netlify.app/#/Kanbas/Account/Signin", 
+  "http://localhost:3000", // Local React development
+  // process.env.NETLIFY_URL || "https://a6--kanbas-web-dev-project.netlify.app/#/Kanbas/Account/Signin", 
 ];
 
 // Configure CORS
